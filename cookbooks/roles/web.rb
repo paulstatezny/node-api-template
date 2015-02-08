@@ -10,5 +10,7 @@ override_attributes(
 run_list(
     'recipe[apt]',
     'recipe[nodejs]',
-    'recipe[postgresql]'
+    'recipe[postgresql]',
+    'recipe[synapse::packages]',
+    'recipe[synapse]'
 )
