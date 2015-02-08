@@ -2,7 +2,7 @@
 
 module.exports = function() {
     var serviceProviders = [
-        './test/testServiceProvider'
+        './example/exampleServiceProvider'
     ];
 
     for (var i = 0; i < serviceProviders.length; i++) {
