@@ -19,7 +19,6 @@ The VM can be accessed by default at `192.168.60.10`. To customize, edit `Vagran
 
 ## Working with node
 The node server is started with a package called `forever` to start the server as a daemon. By default the daemon is
-started using the command `forever start -o /vagrant/out.log -e /vagrant/error.log server.js`. This creates `out.log`
-in `/vagrant` that can be used to read the output of any `console.log()` calls. It also creates `error.log` for any errors.
+started using the command `forever start -o /vagrant/out.log -e /vagrant/error.log -c nodemon server.js`. This creates `out.log` in `/vagrant` that can be used to read the output of any `console.log()` calls. It also creates `error.log` for any errors.
 
 Manually restart the server from inside the vagrant box with `sudo forever restartall` or the server will automatically restart when you edit files.
