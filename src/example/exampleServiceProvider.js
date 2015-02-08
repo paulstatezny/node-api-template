@@ -1,5 +1,10 @@
 'use strict';
+var exampleController = require('./exampleController');
 
-module.exports = function() {
-    console.log("YES");
+module.exports = function(server) {
+    server.route({
+        method: 'GET',
+        path: '/example',
+        handler: exampleController
+    });
 }
