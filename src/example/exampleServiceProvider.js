@@ -5,6 +5,6 @@ module.exports = function(server) {
     server.route({
         method: 'GET',
         path: '/example',
-        handler: exampleController
+        handler: exampleController.get
     });
 }

@@ -1,5 +1,9 @@
 'use strict';
 
-module.exports = function(request, reply) {
+var exampleController = function exampleController() {}
+
+exampleController.prototype.get = function(request, reply) {
     reply('hey what\'s up');
 }
+
+module.exports = new exampleController();
