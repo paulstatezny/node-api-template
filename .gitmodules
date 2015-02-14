@@ -34,3 +34,6 @@
 [submodule "cookbooks/yum-epel"]
 	path = cookbooks/yum-epel
 	url = git@github.com:chef-cookbooks/yum-epel.git
+[submodule "cookbooks/database"]
+	path = cookbooks/database
+	url = git@github.com:opscode-cookbooks/database.git
