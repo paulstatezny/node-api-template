@@ -15,13 +15,16 @@ override_attributes(
     },
     'postgresql' => {
         'version'         => '9.3',
-        'enable_pgdg_apt' => true
+        'enable_pgdg_apt' => true,
+        'password' => {
+            'postgres' => 'md51b21e54a3aa2039842bdc3fc9f95b173'
+        }
     }
 )
 
 run_list(
     'recipe[apt]',
     'recipe[nodejs]',
-    'recipe[postgresql]',
+    'recipe[postgresql::server]',
     'recipe[node_server]'
 )
