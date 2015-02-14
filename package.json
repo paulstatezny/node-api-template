@@ -1,0 +1,22 @@
+{
+  "name": "node-api-template",
+  "version": "0.0.0",
+  "description": "A template for a Node.js REST API",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paulstatezny/node-api-template.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paulstatezny/node-api-template/issues"
+  },
+  "homepage": "https://github.com/paulstatezny/node-api-template",
+  "dependencies": {
+    "hapi": "^8.1.0"
+  }
+}
