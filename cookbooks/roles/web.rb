@@ -19,6 +19,9 @@ override_attributes(
         'password' => {
             'postgres' => 'md51b21e54a3aa2039842bdc3fc9f95b173'
         }
+    },
+    'apt' => {
+        'compile_time_update' => true
     }
 )
 
@@ -26,5 +29,6 @@ run_list(
     'recipe[apt]',
     'recipe[nodejs]',
     'recipe[postgresql::server]',
-    'recipe[node_server]'
+    'recipe[node_server]',
+    'recipe[project_database]'
 )
