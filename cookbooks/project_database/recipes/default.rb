@@ -8,7 +8,7 @@ end.run_action(:install)
 
 include_recipe "database::postgresql"
 
-postgresql_database 'exampel_vm' do
+postgresql_database 'example_vm' do
   connection(
     :host      => '127.0.0.1',
     :port      => 5432,
