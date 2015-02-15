@@ -2,9 +2,9 @@ execute "apt-get update" do
   action :nothing
 end.run_action(:run)
 
-apt_package "ruby-dev" do
-  action :install
-end
+apt_package "ruby1.9.1-dev" do
+  action :nothing
+end.run_action(:install)
 
 include_recipe "database::postgresql"
 
