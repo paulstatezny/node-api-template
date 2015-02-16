@@ -28,4 +28,4 @@ Mapper.prototype.query = function(query) {
     });
 };
 
-module.exports = new Mapper();
+module.exports = Mapper;
